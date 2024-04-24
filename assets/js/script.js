@@ -255,6 +255,8 @@ function togglePasswordVisibility() {
 const clearFormFields = () => {
     allInput.forEach(input => {
         input.value = '';
+        allBtn[1].disabled = false;
+        allBtn[0].disabled = true;
     });
     url = ''; 
 };
@@ -262,3 +264,5 @@ const clearFormFields = () => {
 addBtn.onclick = () => {
     clearFormFields();
 };
+
+
