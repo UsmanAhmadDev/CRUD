@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container .head{
+    background-color: #435d7d;
+    padding: 25px 25px;
+    border-radius: 5px;
+}
+.container .table-main{
+    max-width: 98%;
+    margin: auto;
+}
+.main-sec h2{
+    margin-bottom: 0px;
+}
+.main-sec .container .modal .modal-dialog .modal-content .modal-body .toggle-password {
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.main-sec .container .head-sec .head .head-btns button{
+    margin: 0px 5px !important;
+}
+.main-sec .container .head-sec .head .head-btns button .search{
+    border: none !important;
+}
