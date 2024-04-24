@@ -90,7 +90,7 @@ const action = () =>{
     for(let btn of allDelBtn)
     {
         btn.onclick = async () =>{
-            let isConfirm = await confrim();
+            let isConfirm = await confirm();
             if(isConfirm)
             {
                 let index = btn.getAttribute("index");
@@ -118,7 +118,7 @@ const action = () =>{
             allInput[2].value = data.mobile;
             allInput[3].value = data.dob;
             allInput[4].value = data.password;
-            url = data.prrofile;
+            url = data.profile;
             allBtn[0].disabled = false;
             allBtn[1].disabled = true;
 
@@ -164,7 +164,7 @@ allInput[5].onchange = () => {
 // Delete all data
 
 delAllBtn.onclick = async () =>{
-    let isConfirm = await confrim();
+    let isConfirm = await confirm();
     if(isConfirm)
     {
         allRegData = [];
@@ -177,7 +177,7 @@ delAllBtn.onclick = async () =>{
 
 // Confirm from sweet alert
 
-const confrim = () =>{
+const confirm = () =>{
     return new Promise((resolve,reject)=>{
         swal({
             title: "Are you sure?",
@@ -248,3 +248,17 @@ function togglePasswordVisibility() {
         toggleIcon.textContent = "visibility_off";
     }
 }
+
+
+// clear the form fields if user do not update the content
+
+const clearFormFields = () => {
+    allInput.forEach(input => {
+        input.value = '';
+    });
+    url = ''; 
+};
+
+addBtn.onclick = () => {
+    clearFormFields();
+};
