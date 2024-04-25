@@ -1,0 +1,52 @@
+@media (max-width: 991px){
+	.main-sec .container .head-sec .head{
+        display: block !important;
+    }
+}
+
+@media (max-width: 768px){
+    .container, .container-sm {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 635px){
+    .main-sec h2{
+        font-size: 25px;
+    }
+    .main-sec .container .head-sec .head .head-btns{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-sec .container .head-sec .head .head-btns button{
+        margin: 7px 5px !important;
+    }
+}
+
+@media (max-width: 485px){
+    .main-sec .container .table thead tr th{
+        font-size: 10px;
+    }
+    .main-sec .container .table tbody tr td{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 346px){
+    .main-sec h2{
+        font-size: 20px;
+    }
+    .main-sec .container .table tbody tr td button{
+        font-size: 10px;
+    }
+    .main-sec .container .table thead tr th{
+        padding: 3px 0px;
+        font-size: 9px;
+    }
+    .container .table-main{
+        max-width: 100%;
+    }
+    .main-sec .container .table tbody tr td{
+        font-size: 9px;
+    }
+}
